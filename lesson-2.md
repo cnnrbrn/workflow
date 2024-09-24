@@ -31,6 +31,16 @@ Let's break this down:
 
 ## 2. Testing pure functions from the sample app
 
+Before we start testing, let's briefly explain what a pure function is:
+
+A pure function is a function that:
+
+1. Always returns the same output for the same input.
+2. Doesn't modify anything outside of its scope (no side effects).
+3. Doesn't rely on external state that might change.
+
+Pure functions are easier to test because their behavior is predictable and they don't depend on or affect the outside world. This makes them ideal candidates for unit testing.
+
 For this part of the lesson, we'll be using examples from this GitHub repository:
 
 https://github.com/cnnrbrn/workflow-repo

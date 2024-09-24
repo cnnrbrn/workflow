@@ -1,6 +1,6 @@
 # Lesson 3: Mocking in Vitest
 
-## 3.1 Mocking Browser APIs
+## 1. Mocking Browser APIs
 
 Browser APIs are built-in tools in web browsers that allow web pages to perform various tasks. Common examples include:
 
@@ -118,7 +118,7 @@ it("saves a token", () => {
 
 By mocking `localStorage`, we avoid these errors and can focus on testing our code's logic and its interaction with `localStorage`.
 
-## 3.2 Using jsdom with Vitest
+## 2. Using jsdom with Vitest
 
 While manually mocking `localStorage` works, jsdom provides a more complete simulation of a browser environment in Node.js. This includes `localStorage` and many other browser APIs, making our tests more realistic and reducing the need for manual mocking.
 
@@ -247,7 +247,7 @@ Considerations:
 
 Using jsdom simplifies our tests and makes them more robust, closely mimicking a real browser environment without the need for extensive manual mocking.
 
-# 3.3 Testing DOM Manipulation Functions
+## 4. Testing DOM Manipulation Functions
 
 Now that we've covered mocking browser APIs and using jsdom, let's apply these concepts to test functions that directly manipulate the DOM. We'll use the `updateMainHeading` function from the repo as an example.
 
@@ -264,13 +264,9 @@ export function updateMainHeading(newHeading) {
 
 This function updates the text content of the first `<h1>` element on the page. If no `<h1>` element exists, it does nothing.
 
-## Setting Up the Test Environment
+### Setting Up the Test Environment
 
 First, make sure you have jsdom set up in your Vitest configuration as discussed earlier in this lesson. Then, create a new test file and write the tests:
-
-## Writing Tests for updateMainHeading
-
-Now, let's write tests for our `updateMainHeading` function:
 
 ```javascript
 // File: js/ui/common/updateMainHeading.test.js
@@ -311,7 +307,7 @@ Let's break down these tests:
 
 4. **Testing Edge Cases**: Our second test verifies that the function doesn't throw an error when there's no `<h1>` element to update.
 
-## Key Points for DOM Testing
+### Key Points for DOM Testing
 
 1. **Clean Tests**: Set up a fresh DOM before each test and clean up after. This keeps tests independent.
 

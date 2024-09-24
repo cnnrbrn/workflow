@@ -31,7 +31,7 @@ Vitest is:
 - Easy to use: It has a simple way of writing tests that's easy to learn.
 - Feature-rich: It includes many helpful features for different testing needs.
 
-## 3.5 Vitest vs Jest
+## 4. Vitest vs Jest
 
 Now that we know about Vitest, let's compare it to another popular testing tool called Jest.
 
@@ -87,7 +87,7 @@ However, some advanced Jest features might need small changes to work with Vites
 
 Remember, both Jest and Vitest are good tools. The best choice depends on your project's needs.
 
-## 4. Setting up Vitest
+## 5. Setting up Vitest
 
 We can set up Vitest in two main ways:
 
@@ -141,7 +141,7 @@ We can set up Vitest in two main ways:
    }
    ```
 
-## 5. Writing Your First Test
+## 6. Writing Your First Test
 
 Let's write a simple test for a function that adds two numbers:
 
@@ -170,7 +170,3 @@ Let's write a simple test for a function that adds two numbers:
    ```
 
 If everything is set up correctly, you should see a message saying the test passed!
-
-## Conclusion
-
-In this lesson, we learned what unit testing is, why it's important, and how to set up Vitest for our projects. We also wrote our first simple test. In the next lesson, we'll dive deeper into writing different kinds of tests for a web application.
